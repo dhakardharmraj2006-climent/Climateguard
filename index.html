@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimateGuard 🌍</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f1fff5;
+      color: #123b25;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #159447;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #123b25;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      background: linear-gradient(135deg, #dfffea, #c9f5dd);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #159447;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #496052;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #159447;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .earth {
+      font-size: 180px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px #00000012;
+    }
+
+    .card .icon {
+      font-size: 40px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #123b25;
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .earth {
+        font-size: 110px;
+        margin-top: 40px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">🌍 ClimateGuard</div>
+
+    <div>
+      <a href="#problem">Problem</a>
+      <a href="#solutions">Solutions</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>
+        Protect Earth.<br>
+        <span>Start Today.</span>
+      </h1>
+
+      <p>
+        Climate change is a global challenge.
+        Learn about it and discover simple actions
+        that can help protect our planet.
+      </p>
+
+      <a class="btn" href="#solutions">
+        Take Action →
+      </a>
+    </div>
+
+    <div class="earth">
+      🌍
+    </div>
+
+  </section>
+
+  <section id="problem">
+
+    <h2 class="title">
+      Why Climate Action Matters
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🌡️</div>
+        <h3>Rising Temperatures</h3>
+        <p>
+          Human activities are increasing greenhouse
+          gases and warming the planet.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌳</div>
+        <h3>Protect Nature</h3>
+        <p>
+          Forests and healthy ecosystems help store
+          carbon and support life.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌊</div>
+        <h3>Climate Risks</h3>
+        <p>
+          Communities need to reduce emissions and
+          prepare for climate-related risks.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="solutions">
+
+    <h2 class="title">
+      What Can We Do?
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Save Energy</h3>
+        <p>Use electricity efficiently.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚲</div>
+        <h3>Travel Smart</h3>
+        <p>Walk, cycle or use public transport when possible.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">♻️</div>
+        <h3>Reduce Waste</h3>
+        <p>Reuse and recycle whenever possible.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    🌍 ClimateGuard — Learn • Act • Protect
+  </footer>
+
+</body>
+  </html>
